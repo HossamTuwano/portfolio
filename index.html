@@ -1,31 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="sidebar.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hossm — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <main>
-    <div class="container">
-      <div id="sidebar-target"></div>
-      <div class="content">
-        <div class="content-inner">
-          <h1>Welcome to My Personal Portfolio</h1>
-          <p>This is my classic workspace where I showcase my projects and journey as a developer. Feel free to explore using the navigation on the left.</p>
-          <p>I focus on clean code and minimalist design principles.</p>
-        </div>
+  <aside class="side_nav" aria-label="Primary">
+    <div class="profile">
+      <div class="profile-image"></div>
+      <div>
+        <div class="name">Hossm</div>
+        <div class="role">Web dev</div>
       </div>
     </div>
+    <ul class="nav_items">
+      <li><a class="active-nav" href="index.html">Home</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/projects.html">Projects</a></li>
+      <li><a href="pages/get-know-me.html">Get Know Me</a></li>
+      <li><a href="pages/contacts.html">Contacts</a></li>
+      <li><a href="pages/hire-me.html">Hire Me</a></li>
+    </ul>
+  </aside>
+  <main>
+    <div class="container">
+      <div class="content">
+        <h1>Hossm</h1>
+        <p>Web application designer & developer. Simple, fast, and clear builds.</p>
 
+        <div class="section">
+          <h2>Quick access</h2>
+          <div class="list">
+            <div class="list-item">
+              <h3>About</h3>
+              <p>Who I am, how I work, what I care about.</p>
+              <div class="links"><a class="btn-ghost" href="pages/about.html">Open</a></div>
+            </div>
+            <div class="list-item">
+              <h3>Projects</h3>
+              <p>Selected work and experiments.</p>
+              <div class="links"><a class="btn-ghost" href="pages/projects.html">Open</a></div>
+            </div>
+            <div class="list-item">
+              <h3>Contact</h3>
+              <p>Reach out for collaborations or advisory.</p>
+              <div class="links"><a class="btn-ghost" href="pages/contacts.html">Open</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Focus</h2>
+          <div class="list">
+            <div class="list-item">
+              <h3>Product engineering</h3>
+              <p>Shipping UI + API with a pragmatic eye for quality and delivery speed.</p>
+            </div>
+            <div class="list-item">
+              <h3>Systems & polish</h3>
+              <p>Design systems, performance passes, and steady refactors to keep teams fast.</p>
+            </div>
+            <div class="list-item">
+              <h3>Advisory</h3>
+              <p>Architecture reviews, DX improvements, and roadmap sanity checks.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Availability</h2>
+          <div class="list">
+            <div class="list-item">
+              <h3>Open for collaborations</h3>
+              <p>Send a concise brief with goals, constraints, and timelines. Replies within 24h.</p>
+              <div class="links"><a class="btn-ghost" href="pages/hire-me.html">Hire me</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer">© 2026 Hossm — Simple and intentional.</div>
+      </div>
+    </div>
   </main>
-  <script src="script.js"></script>
 </body>
-
 </html>
